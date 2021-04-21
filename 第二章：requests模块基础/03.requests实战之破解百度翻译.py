@@ -15,7 +15,7 @@ if __name__ == "__main__":
     data = {
         'kw':word
     }
-    #4.请求发送
+    #4.请求发送，！！！ 注意这里用的是post请求
     response = requests.post(url=post_url,data=data,headers=headers)
     #5.获取响应数据:json()方法返回的是obj（如果确认响应数据是json类型的，才可以使用json（））
     dic_obj = response.json()
